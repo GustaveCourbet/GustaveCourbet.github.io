@@ -1,0 +1,31 @@
+.background {
+    background:#f3ecdc;
+    min-height: 100vh;
+}
+/* .overlay{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border:4px solid #b7163f;
+    height: 95vh;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.overlay-inner{
+    border:2px solid #b7163f;
+    height: 91vh;
+    width: 93vw;
+} */
+.front-text{
+    color:#b7163f;
+    font-family: 'Century Gothic', 'Helvetica',sans-serif;
+    font-weight: lighter;
+    margin-top: 25vh;
+    margin-left: 15vh;
+    font-size: 50px;
+    border-bottom:1px solid #b7163f;
+    display: inline-block;
+}
