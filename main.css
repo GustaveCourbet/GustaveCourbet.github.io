@@ -1,6 +1,7 @@
 .background {
     background:#f3ecdc;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 /* .overlay{
     top: 50%;
@@ -28,4 +29,61 @@
     font-size: 50px;
     border-bottom:1px solid #b7163f;
     display: inline-block;
+}
+.statictext{
+    position: fixed;
+    z-index: -1;
+}
+.placeholder-frame{
+    height: 40vh;
+}
+.wave-holder{
+    display: flex;
+    width: 235%;
+    transform: translateX(-2%);
+    overflow: hidden;
+}
+.wave{
+    height: 270px;
+    width :495px;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    position: relative;
+}
+.wave-front{
+    z-index: 10;
+    /* animation-name: wave;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; */
+}
+.wave-back{
+    transform: translateX(-58%);
+    animation-delay:0.75s;
+}
+.wave:nth-child(3){
+    transform: translateX(-115%)
+}
+.wave:nth-child(4){
+    transform: translateX(-172%);
+}
+.wave:nth-child(5){
+    transform: translateX(-230%);
+}
+.wave:nth-child(6){
+    transform: translateX(-285%);
+}
+@keyframes wave{
+    from{
+        top:0;
+    }
+    to{
+        top:-150px;
+    }
+}
+.screen2{
+    background: #224d7a;
+    height: 700px;
 }
