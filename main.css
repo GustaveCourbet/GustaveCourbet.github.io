@@ -1,3 +1,7 @@
+@font-face{
+    font-family: "lozfont";
+    src: url('./assets/fonts/Triforce.ttf') format('truetype');
+}
 .background {
     background:#f3ecdc;
     min-height: 100vh;
@@ -22,36 +26,34 @@
 } */
 .front-text{
     color:#b7163f;
-    font-family: 'Century Gothic', 'Helvetica',sans-serif;
+    font-family: 'lozfont', 'Helvetica',sans-serif;
     font-weight: lighter;
     margin-top: 25vh;
     margin-left: 15vh;
-    font-size: 50px;
+    font-size: 80px;
     border-bottom:1px solid #b7163f;
     display: inline-block;
 }
 .statictext{
     position: fixed;
     z-index: -1;
+    width: 100%;
 }
 .placeholder-frame{
-    height: 40vh;
+    height: 60vh;
 }
 .wave-holder{
     display: flex;
-    width: 235%;
-    transform: translateX(-2%);
+    width: 5000px;
+    height: 300px;
+    transform: translateX(-1%);
     overflow: hidden;
+    position: relative;
 }
 .wave{
-    height: 270px;
-    width :495px;
-    animation-name: wave;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-duration: 2s;
-    animation-direction: alternate;
+    height: 100%;
     position: relative;
+    max-width: 1500px;
 }
 .wave-front{
     z-index: 10;
@@ -59,31 +61,33 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out; */
 }
-.wave-back{
-    transform: translateX(-58%);
-    animation-delay:0.75s;
+.wave2{
+    height: 100%;
+    position: absolute;
+    z-index: -1;
 }
-.wave:nth-child(3){
-    transform: translateX(-115%)
+.wave2:nth-child(2) {
+    left: 4%;
 }
-.wave:nth-child(4){
-    transform: translateX(-172%);
+.wave2:nth-child(3) {
+    left: 14%;
 }
-.wave:nth-child(5){
-    transform: translateX(-230%);
+.wave2:nth-child(4) {
+    left: 24%;
 }
-.wave:nth-child(6){
-    transform: translateX(-285%);
+.wave2:nth-child(6) {
+    left: 34%;
 }
-@keyframes wave{
-    from{
-        top:0;
-    }
-    to{
-        top:-150px;
-    }
+.wave2:nth-child(7) {
+    left: 44%;
 }
-.screen2{
-    background: #224d7a;
-    height: 700px;
+.wave2:nth-child(8) {
+    left: 54%;
+}
+.sail {
+    position: absolute;
+    height: 600px;
+    top: -5px;
+    z-index: -1;
+    right: -55px;
 }
