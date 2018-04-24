@@ -6,6 +6,7 @@
     background:#f3ecdc;
     min-height: 100vh;
     overflow-x: hidden;
+    margin: 0;
 }
 /* .overlay{
     top: 50%;
@@ -90,4 +91,66 @@
     top: -5px;
     z-index: -1;
     right: -55px;
+}
+.page2 {
+    background: #224D7A;
+    position: relative;
+}
+.windwaker {
+    width: 750px;
+    transform: rotate(60deg);
+    position: relative;
+    left: 120px;
+}
+.dleft {
+    left: 970px;
+    bottom: 350px;
+}
+.dup {
+    left: 300px;
+    bottom: 140px;
+}
+.dright {
+    left: -540px;
+    bottom: 230px;
+}
+.dleft,.dup,.dright{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background: url('./assets/images/base.svg');
+    font-family: 'lozfont', 'Helvetica',sans-serif;
+}
+.showup{
+    display: none;
+    position: absolute;
+}
+.dleft:hover{
+    background: url('./assets/images/left.svg');
+}
+.dup:hover{
+    background: url('./assets/images/up.svg');
+}
+.dright:hover{
+    background: url('./assets/images/right.svg');
+}
+.showup{
+    color: #fff0c9;
+    font-size: 40px;
+}
+.dleft:hover .showup,.dup:hover .showup,.dright:hover .showup{
+    display: inline-block;
+}
+.dright .showup{
+    top: 270px;
+    left:35px;
+}
+.dup .showup{
+    top: -100px;
+    left: -110px;
+}
+.dleft .showup{
+    top: -100px;
+    left: -30px;
 }
