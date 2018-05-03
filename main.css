@@ -93,25 +93,26 @@
     right: -55px;
 }
 .page2 {
-    background: #224D7A;
+    background: #d8c8a4;
     position: relative;
 }
 .windwaker {
     width: 750px;
-    transform: rotate(60deg);
+    transform: rotate(57deg);
     position: relative;
     left: 120px;
+    top: -30px;
 }
 .dleft {
-    left: 970px;
-    bottom: 350px;
+    left: 900px;
+    bottom: 230px;
 }
 .dup {
-    left: 300px;
-    bottom: 140px;
+    left: 150px;
+    bottom: 230px;
 }
 .dright {
-    left: -540px;
+    left: -590px;
     bottom: 230px;
 }
 .dleft,.dup,.dright{
@@ -136,14 +137,14 @@
     background: url('./assets/images/right.svg');
 }
 .showup{
-    color: #fff0c9;
+    color: #7c683e;
     font-size: 40px;
 }
 .dleft:hover .showup,.dup:hover .showup,.dright:hover .showup{
     display: inline-block;
 }
 .dright .showup{
-    top: 270px;
+    top: -95px;
     left:35px;
 }
 .dup .showup{
